@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Bliss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff4e00;
+      --accent: #ffc107;
+      --dark: #1e1e1e;
+      --light: #fff8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1601924582975-7ba3f1c239c6?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .menu {
+      padding: 60px 40px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .menu h3 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .item {
+      background: #fff3e0;
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .item h4 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .item p {
+      color: #444;
+    }
+
+    .footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pizza Bliss</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Crafted with Passion, Baked to Perfection</h2>
+      <p>Welcome to Pizza Bliss, where every bite is a burst of flavor. Fresh, hot, and made just for you.</p>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h3>Customer Favorites</h3>
+    <div class="menu-items">
+      <div class="item">
+        <h4>Margherita</h4>
+        <p>Classic tomato, fresh mozzarella, and basil on thin crust.</p>
+      </div>
+      <div class="item">
+        <h4>Truffle Mushroom</h4>
+        <p>Creamy base, wild mushrooms, and truffle oil drizzle.</p>
+      </div>
+      <div class="item">
+        <h4>Spicy Diavola</h4>
+        <p>Pepperoni, chili flakes, and hot honey — a fiery favorite.</p>
+      </div>
+      <div class="item">
+        <h4>Veggie Supreme</h4>
+        <p>Loaded with bell peppers, olives, onions, and spinach.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Pizza Bliss. All rights reserved.</p>
+  </footer>
+</body>
+</html>
